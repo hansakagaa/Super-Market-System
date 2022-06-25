@@ -1,0 +1,12 @@
+*{
+    -fx-font-family: Ubuntu;
+}
+
+#imgAdmin:hover{
+    -fx-effect: dropshadow(gaussian,#2B39FF,20,0.0,0,0);
+}
+
+#lbl{
+    -fx-font-size: 25;
+    -fx-effect: dropshadow(gaussian, #eeeeee, 5, 1.0, 0, 0);
+}

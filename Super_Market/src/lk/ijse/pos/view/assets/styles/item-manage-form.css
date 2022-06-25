@@ -1,0 +1,45 @@
+*{
+    -fx-font-family: Ubuntu;
+}
+
+#imgHome:hover{
+    -fx-effect: dropshadow(gaussian,#6495ED,20,0.0,0,0);
+}
+
+#header{
+    -fx-font-size: 28;
+    -fx-effect: dropshadow(gaussian, white, 2, 1.0, 0, 0);
+}
+
+#root{
+    -fx-background-color: white;
+}
+
+#btnNew{
+    -fx-font-size: 15;
+    -fx-font-weight: bold;
+    -fx-background-color: #0984e3;
+    -fx-text-fill: white;
+}
+
+#btnUpdate{
+    -fx-font-size: 13;
+    -fx-font-weight: bold;
+    -fx-background-color: #4cd137;
+    -fx-text-fill: white;
+}
+
+#btnDelete{
+    -fx-font-size: 13;
+    -fx-font-weight: bold;
+    -fx-background-color: #EA2027;
+    -fx-text-fill: white;
+}
+
+.table-row-cell:selected{
+    -fx-background-color:linear-gradient(from 0% 0% to 100% 100%, white 0%, #007bff 50%, white 100%);
+}
+
+.table-row-cell:selected .table-cell{
+    -fx-text-fill: black !important;
+}

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="350.0" prefWidth="600.0" style="-fx-background-color: white;" styleClass="mainFxmlClass" stylesheets="@assets/styles/cashier-form.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.pos.controller.CashierFormController">
+    <children>
+        <ImageView id="imgAdmin" fitHeight="90.0" fitWidth="90.0" layoutX="156.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@assets/icons/cashier.png" />
+            </image>
+        </ImageView>
+        <Label id="lbl" alignment="CENTER" layoutX="276.0" layoutY="63.0" text="Cashier" textAlignment="CENTER">
+            <font>
+                <Font name="Ubuntu Italic" size="25.0" />
+            </font>
+        </Label>
+        <ImageView id="imgMakeOrder" fx:id="imgMakeOrder" fitHeight="80.0" fitWidth="80.0" layoutX="90.0" layoutY="165.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@assets/icons/make-order.png" />
+            </image>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </ImageView>
+        <ImageView id="imgManageOrder" fx:id="imgManageOrder" fitHeight="80.0" fitWidth="80.0" layoutX="260.0" layoutY="165.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@assets/icons/manage-order.png" />
+            </image>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </ImageView>
+        <Separator layoutX="32.0" layoutY="132.0" prefHeight="0.0" prefWidth="542.0" />
+        <Label fx:id="lblMenu" alignment="CENTER" layoutX="11.0" layoutY="270.0" prefHeight="26.0" prefWidth="577.0" text="Welcome" textAlignment="CENTER" textFill="#0a39f7">
+            <font>
+                <Font name="DejaVu Sans Mono Bold" size="22.0" />
+            </font>
+        </Label>
+        <Label fx:id="lblDescription" alignment="CENTER" layoutX="14.0" layoutY="300.0" prefHeight="16.0" prefWidth="577.0" text="Please select one of above cashier operations to proceed">
+            <font>
+                <Font name="Ubuntu" size="12.0" />
+            </font>
+        </Label>
+      <ImageView id="imgManageCustomer" fx:id="imgManageCustomer" fitHeight="80.0" fitWidth="80.0" layoutX="430.0" layoutY="165.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/icons/manage-order.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+    </children>
+</AnchorPane>

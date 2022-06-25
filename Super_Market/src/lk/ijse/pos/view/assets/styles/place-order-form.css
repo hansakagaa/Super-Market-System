@@ -1,0 +1,69 @@
+*{
+    -fx-font-family: Ubuntu;
+}
+
+#imgHome:hover{
+    -fx-effect: dropshadow(gaussian,#6495ED,20,0.0,0,0);
+}
+
+#header{
+    -fx-font-size: 28;
+    -fx-effect: dropshadow(gaussian, white, 2, 1.0, 0, 0);
+}
+
+#root{
+    -fx-background-color: white;
+}
+
+#pane{
+    -fx-background-color: #eeeeee;
+    -fx-background-radius: 25;
+}
+
+#imgCustomer{
+    -fx-effect: dropshadow(gaussian, white, 5, 1.0, 0, 0);
+}
+
+#imgItem{
+    -fx-effect: dropshadow(gaussian, white, 5, 1.0, 0, 0)
+}
+
+#imgAddCart{
+    -fx-effect: dropshadow(gaussian, white, 5, 1.0, 0, 0)
+}
+
+#imgNewCustomer{
+    -fx-effect: dropshadow(gaussian, white, 5, 1.0, 0, 0)
+}
+
+#txt{
+    -fx-background-color: white;
+    -fx-background-radius: 25;
+}
+
+#lbl{
+    -fx-font-size: 18;
+    -fx-effect: dropshadow(gaussian, white, 3, 1.0, 0, 0);
+}
+
+#btnSave{
+    -fx-font-size: 15;
+    -fx-font-weight: bold;
+    -fx-background-color: green;
+    -fx-text-fill: white;
+}
+
+#btnCancel{
+    -fx-font-size: 15;
+    -fx-font-weight: bold;
+    -fx-background-color: red;
+    -fx-text-fill: white;
+}
+
+.table-row-cell:selected{
+    -fx-background-color:linear-gradient(from 0% 0% to 100% 100%, white 0%, #007bff 50%, white 100%);
+}
+
+.table-row-cell:selected .table-cell{
+    -fx-text-fill: black !important;
+}

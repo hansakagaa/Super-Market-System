@@ -1,0 +1,44 @@
+*{
+    -fx-font-family: Ubuntu;
+}
+
+#imgHome:hover{
+    -fx-effect: dropshadow(gaussian,#6495ED,20,0.0,0,0);
+}
+
+#header{
+    -fx-font-size: 28;
+    -fx-effect: dropshadow(gaussian, white, 2, 1.0, 0, 0);
+}
+
+#pane{
+    -fx-background-color: #eeeeee;
+    -fx-background-radius: 25;
+}
+
+#root{
+    -fx-background-color: white;
+}
+
+#txt{
+    -fx-background-color: white;
+    -fx-background-radius: 25;
+}
+
+#lbl{
+    -fx-font-size: 18;
+    -fx-effect: dropshadow(gaussian, white, 3, 1.0, 0, 0);
+}
+
+#date{
+    -fx-background-color: #eeeeee;
+    -fx-background-radius: 25;
+}
+
+.table-row-cell:selected{
+    -fx-background-color:linear-gradient(from 0% 0% to 100% 100%, white 0%, #007bff 50%, white 100%);
+}
+
+.table-row-cell:selected .table-cell{
+    -fx-text-fill: black !important;
+}

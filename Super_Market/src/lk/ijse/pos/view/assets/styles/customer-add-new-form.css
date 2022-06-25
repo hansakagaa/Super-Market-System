@@ -1,0 +1,23 @@
+*{
+    -fx-font-family: Ubuntu;
+}
+
+#imgHome:hover{
+    -fx-effect: dropshadow(gaussian,#6495ED,20,0.0,0,0);
+}
+
+#header{
+    -fx-font-size: 28;
+    -fx-effect: dropshadow(gaussian, white, 2, 1.0, 0, 0);
+}
+
+#root{
+    -fx-background-color: white;
+}
+
+#btnSave{
+    -fx-font-size: 15;
+    -fx-font-weight: bold;
+    -fx-background-color: #0984e3;
+    -fx-text-fill: white;
+}

@@ -1,0 +1,56 @@
+#mysql -h localhost -p 1234 -u root
+
+DROP DATABASE IF EXISTS SuperMarket;
+CREATE DATABASE IF NOT EXISTS SuperMarket;
+SHOW DATABASES ;
+USE SuperMarket;
+
+DROP TABLE IF EXISTS Customer;
+CREATE TABLE IF NOT EXISTS Customer(
+    id VARCHAR(6),
+    title VARCHAR(5),
+    name VARCHAR(30) NOT NULL DEFAULT 'Unknown',
+    address VARCHAR(30),
+    city VARCHAR(20),
+    province VARCHAR(20),
+    postalCode VARCHAR(9),
+    CONSTRAINT PRIMARY KEY (id)
+);
+SHOW TABLES ;
+DESCRIBE Customer;
+
+DROP TABLE IF EXISTS Orders;
+CREATE TABLE IF NOT EXISTS Orders(
+     orderID VARCHAR(6),
+     orderDate DATE,
+     cstID VARCHAR(6),
+     CONSTRAINT PRIMARY KEY (orderID),
+     CONSTRAINT FOREIGN KEY (cstID) REFERENCES Customer(id) ON DELETE CASCADE ON UPDATE CASCADE
+);
+SHOW TABLES ;
+DESCRIBE Orders;
+
+DROP TABLE IF EXISTS Item;
+CREATE TABLE IF NOT EXISTS Item(
+    itemCode VARCHAR(6),
+    description VARCHAR(50),
+    packSize VARCHAR(20),
+    unitPrice DECIMAL(6,2),
+    qtyOnHand INT(5),
+    CONSTRAINT PRIMARY KEY (itemCode)
+);
+SHOW TABLES ;
+DESCRIBE Item;
+
+DROP TABLE IF EXISTS `Order Detail`;
+CREATE TABLE IF NOT EXISTS `Order Detail`(
+    orderID VARCHAR(6),
+    itemCode VARCHAR(6),
+    orderQTY INT(11),
+    discount DECIMAL(6,2),
+    CONSTRAINT PRIMARY KEY (orderID, itemCode),
+    CONSTRAINT FOREIGN KEY (orderID) REFERENCES Orders(orderID) ON DELETE CASCADE ON UPDATE CASCADE ,
+    CONSTRAINT FOREIGN KEY (itemCode) REFERENCES Item(itemCode) ON DELETE CASCADE ON UPDATE CASCADE
+);
+SHOW TABLES ;
+DESCRIBE `Order Detail`;

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="root" fx:id="root" prefHeight="400.0" prefWidth="600.0" stylesheets="@assets/styles/customer-add-new-form.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.pos.controller.CustomerAddNewFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="100.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="600.0">
+         <fill>
+            <RadialGradient centerY="0.2644230769230769" focusAngle="138.01" radius="0.7261904761904762">
+               <stops>
+                  <Stop color="#3df68d" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Rectangle>
+      <ImageView id="imgHome" fitHeight="60.0" fitWidth="60.0" layoutX="38.0" layoutY="24.0" onMouseClicked="#navigateToHome" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/icons/home-icon.png" />
+         </image>
+      </ImageView>
+      <Label id="header" layoutX="108.0" layoutY="35.0" text="Adding Customer">
+         <font>
+            <Font name="Ubuntu" size="27.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtId" focusColor="#0652dd" labelFloat="true" layoutX="15.0" layoutY="150.0" prefHeight="26.0" prefWidth="165.0" promptText=" Customer Id :" />
+      <Separator layoutX="200.0" layoutY="148.0" orientation="VERTICAL" prefHeight="30.0" prefWidth="0.0" />
+      <JFXTextField fx:id="txtName" focusColor="#0652dd" labelFloat="true" layoutX="215.0" layoutY="148.0" prefHeight="26.0" prefWidth="370.0" promptText=" Name :" AnchorPane.rightAnchor="15.0" />
+      <JFXTextField fx:id="txtTitle" focusColor="#0652dd" labelFloat="true" layoutX="15.0" layoutY="198.0" prefHeight="26.0" prefWidth="165.0" promptText=" Title :" />
+      <Separator layoutX="200.0" layoutY="198.0" orientation="VERTICAL" prefHeight="30.0" prefWidth="0.0" />
+      <JFXTextField fx:id="txtAddress" focusColor="#0652dd" labelFloat="true" layoutX="215.0" layoutY="198.0" prefHeight="26.0" prefWidth="370.0" promptText=" Address :" AnchorPane.rightAnchor="15.0" />
+      <JFXTextField fx:id="txtPostalCode" focusColor="#0652dd" labelFloat="true" layoutX="15.0" layoutY="248.0" prefHeight="26.0" prefWidth="165.0" promptText=" Postal Code :" />
+      <Separator layoutX="200.0" layoutY="248.0" orientation="VERTICAL" prefHeight="30.0" prefWidth="0.0" />
+      <JFXTextField fx:id="txtCity" focusColor="#0652dd" labelFloat="true" layoutX="225.0" layoutY="248.0" prefHeight="26.0" prefWidth="165.0" promptText=" City :" />
+      <Separator layoutX="410.0" layoutY="248.0" orientation="VERTICAL" prefHeight="30.0" prefWidth="0.0" />
+      <JFXTextField fx:id="txtProvince" focusColor="#0652dd" labelFloat="true" layoutX="420.0" layoutY="248.0" prefHeight="26.0" prefWidth="165.0" promptText=" Province :" AnchorPane.rightAnchor="15.0" />
+      <JFXButton id="btnSave" fx:id="btnSave" buttonType="RAISED" layoutX="205.0" layoutY="321.0" onAction="#saveCustomerOnAction" prefHeight="35.0" prefWidth="200.0" text="Save Customer">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

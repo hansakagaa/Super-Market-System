@@ -1,0 +1,85 @@
+*{
+    -fx-font-family: Ubuntu;
+}
+
+#imgHome:hover{
+    -fx-effect: dropshadow(gaussian,#6495ED,20,0.0,0,0);
+}
+
+#header{
+    -fx-font-size: 28;
+    -fx-effect: dropshadow(gaussian, white, 2, 1.0, 0, 0);
+}
+
+#root{
+    -fx-background-color: white;
+}
+
+#txt{
+    -fx-background-color: #eeeeee;
+    -fx-background-radius: 25;
+    -fx-alignment: center;
+}
+
+#txtPane{
+    -fx-background-color: white;
+    -fx-background-radius: 25;
+}
+
+#imgSearch:hover{
+    -fx-effect: dropshadow(gaussian,#0984e3,20,0.0,0,0);
+}
+
+#lbl{
+    -fx-font-size: 18;
+    -fx-effect: dropshadow(gaussian, white, 3, 1.0, 0, 0);
+}
+
+#btnRemove{
+    -fx-background-color: orange;
+    -fx-background-radius: 10;
+    -fx-text-fill: white;
+    -fx-text-alignment: center;
+}
+
+#btnAdd{
+    -fx-background-color: blue;
+    -fx-background-radius: 10;
+    -fx-text-fill: white;
+    -fx-text-alignment: center;
+}
+
+#btnDelete{
+    -fx-background-color: red;
+    -fx-background-radius: 10;
+    -fx-text-fill: white;
+    -fx-text-alignment: center;
+}
+
+#pane{
+    -fx-background-color: #eeeeee;
+    -fx-background-radius: 25;
+}
+
+.table-row-cell:selected{
+    -fx-background-color:linear-gradient(from 0% 0% to 100% 100%, white 0%, #007bff 50%, white 100%);
+}
+
+.table-row-cell:selected .table-cell{
+    -fx-text-fill: black !important;
+}
+
+
+#btnSave{
+    -fx-font-size: 15;
+    -fx-font-weight: bold;
+    -fx-background-color: green;
+    -fx-text-fill: white;
+}
+
+#btnCancel{
+    -fx-font-size: 15;
+    -fx-font-weight: bold;
+    -fx-background-color: red;
+    -fx-text-fill: white;
+}
