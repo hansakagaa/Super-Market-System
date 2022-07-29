@@ -2,6 +2,7 @@ package lk.ijse.pos.bo;
 
 import lk.ijse.pos.bo.custom.impl.*;
 
+
 public class BOFactory {
     private static BOFactory boFactory;
 
